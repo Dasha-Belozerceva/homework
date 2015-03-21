@@ -144,19 +144,19 @@ namespace ListNamespace
         /// </summary>
         /// <param name="position">position of this element</param>
         /// <returns></returns>
-        public bool RemoveElementFromPosition(int position)
+        public void RemoveElementFromPosition(int position)
         {
             //проверка на корректность заданной позиции
             if (position < 0 || position > SizeOfList() + 1)
             {
                 Console.WriteLine("Error!");
-                return false;
+                return;
             }
             //если позиция равна нулю, удаляем из начала списка
             if (position == 0)
             {
                 head = head.Next;
-                return true;
+                return;
             }
             ListElement currentElement = head;
             int countOfPosition = 0;
@@ -166,7 +166,7 @@ namespace ListNamespace
                 ++countOfPosition;
             }
             currentElement.Next = currentElement.Next.Next;
-            return true;
+            return;
         }
         /// <summary>
         /// checks for element value in the list
