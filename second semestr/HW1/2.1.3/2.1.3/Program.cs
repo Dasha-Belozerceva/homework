@@ -21,6 +21,7 @@ namespace _2._1._3
                 }
             }
         }
+        
         public static int Main()
         {
             //Вводим длину массива
@@ -57,6 +58,7 @@ namespace _2._1._3
             for (int i = 0; i < length; ++i)
                 Console.Write(array[i] + " ");
             Console.WriteLine();
+
             return 0;
         }
     }

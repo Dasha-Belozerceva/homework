@@ -5,6 +5,11 @@ namespace _2._1._2
 {
     public static class Fibonacci
     {
+        /// <summary>
+        /// The function calculates the fibonacci number of the input value
+        /// </summary>
+        /// <param name="number"></param>
+        /// <returns></returns>
         public static int fibonacci(int number)
         {
             int number1 = 0;
@@ -27,6 +32,9 @@ namespace _2._1._2
                 return exchange;
             }
         }
+        /// <summary>
+        /// input argument with a keyboard and realization of fibonacci function
+        /// </summary>
         public static void Main()
         {
             Console.WriteLine("Enter the number: ");
