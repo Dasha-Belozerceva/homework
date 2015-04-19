@@ -4,16 +4,16 @@ namespace _2._1._3
 {
     public static class BubbleSort
     {
-        //сортировка массива
-        public static void bubbleSort(int[] array, int length)
+        
+        public static void BubbleSorting(int[] array)
         {
-            int temp = 0;
-            for (int i = 0; i < length; ++i)
+            for (int i = 0; i < array.Length; ++i)
             {
-                for (int j = i + 1; j < length; ++j)
+                for (int j = i + 1; j < array.Length; ++j)
                 {
                     if (array[j] < array[i])
                     {
+                        int temp = 0;
                         temp = array[j];
                         array[j] = array[i];
                         array[i] = temp;
@@ -24,7 +24,7 @@ namespace _2._1._3
         
         public static int Main()
         {
-            //Вводим длину массива
+           
             Console.WriteLine("enter the length of array: ");
             int length = Convert.ToInt32(Console.ReadLine());
             if (length <= 0)
@@ -34,7 +34,7 @@ namespace _2._1._3
             }
             Console.WriteLine();
             int[] array = new int[length];
-            //Заполняем массив
+            
             Console.WriteLine("enter a non-negative number is not more than a thousand: ");
             for (int i = 0; i < length; ++i)
             {
@@ -51,9 +51,9 @@ namespace _2._1._3
                 }
             }
             Console.WriteLine(); 
-            //Сортируем массив
-            bubbleSort(array, length);
-            //Вывод массива на экран
+            
+            BubbleSorting(array);
+            
             Console.WriteLine("Sorted array: ");
             for (int i = 0; i < length; ++i)
                 Console.Write(array[i] + " ");
