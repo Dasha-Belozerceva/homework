@@ -5,10 +5,6 @@ namespace _2._1._3
     public static class BubbleSort
     {
         
-        /// <summary>
-        /// Method of Bubble Sorting
-        /// </summary>
-        /// <param name="array">array that need in sorting</param>
         public static void BubbleSorting(int[] array)
         {
             for (int i = 0; i < array.Length; ++i)
@@ -56,7 +52,7 @@ namespace _2._1._3
             }
             Console.WriteLine(); 
             
-            BubbleSorting (array);
+            BubbleSorting(array);
             
             Console.WriteLine("Sorted array: ");
             for (int i = 0; i < length; ++i)
