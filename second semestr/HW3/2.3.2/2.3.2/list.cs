@@ -8,11 +8,11 @@ namespace TemplateOfList
         /// <summary>
         /// Pointer to the first list element. if the list is empty, the first element is null
         /// </summary>
-        public ListElement head = null;
+        ListElement head = null;
         /// <summary>
         /// describe list element
         /// </summary>
-        public class ListElement
+        class ListElement
         {
             /// <summary>
             /// value of the list element
@@ -51,7 +51,7 @@ namespace TemplateOfList
         /// </summary>
         /// <param name="position"></param>
         /// <returns>value of element</returns>
-        public string getValue(int position)
+        public string GetValue(int position)
         {
             if (position < 0 || position > SizeOfList() + 1)
             {
@@ -190,7 +190,7 @@ namespace TemplateOfList
         /// delete element with this value from list
         /// </summary>
         /// <param name="value">value of this element</param>
-        public void removeElementByValue(string value)
+        public void RemoveElementByValue(string value)
         {
             //проверим есть ли элемент с данным значением в списке
             if (!availabilityOFValue(value))
@@ -218,7 +218,7 @@ namespace TemplateOfList
         /// <summary>
         /// and finally...print this list (show its on the screen)
         /// </summary>
-        public void printList()
+        public void PrintList()
         {
             ListElement currentElement = head;
             while (currentElement != null)
