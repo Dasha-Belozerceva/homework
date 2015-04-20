@@ -1,0 +1,12 @@
+c:\users\даша\documents\visual studio 2013\Projects\2.1.3\2.1.3\bin\Debug\2.1.3.exe.config
+c:\users\даша\documents\visual studio 2013\Projects\2.1.3\2.1.3\obj\Debug\2.1.3.csprojResolveAssemblyReference.cache
+c:\users\даша\documents\visual studio 2013\Projects\2.1.3\2.1.3\bin\Debug\2.1.3.exe
+c:\users\даша\documents\visual studio 2013\Projects\2.1.3\2.1.3\bin\Debug\2.1.3.pdb
+c:\users\даша\documents\visual studio 2013\Projects\2.1.3\2.1.3\obj\Debug\2.1.3.exe
+c:\users\даша\documents\visual studio 2013\Projects\2.1.3\2.1.3\obj\Debug\2.1.3.pdb
+C:\Dasha\прога\Projects\2.1.3\2.1.3\bin\Debug\2.1.3.exe.config
+C:\Dasha\прога\Projects\2.1.3\2.1.3\obj\Debug\2.1.3.exe
+C:\Dasha\прога\Projects\2.1.3\2.1.3\obj\Debug\2.1.3.pdb
+C:\Dasha\прога\Projects\2.1.3\2.1.3\obj\Debug\2.1.3.csprojResolveAssemblyReference.cache
+C:\Dasha\прога\Projects\2.1.3\2.1.3\bin\Debug\2.1.3.exe
+C:\Dasha\прога\Projects\2.1.3\2.1.3\bin\Debug\2.1.3.pdb
