@@ -42,25 +42,25 @@ namespace _2._2._2.Tests
         {
             list.InsertElementToHead("gate 21");
             Assert.IsFalse(list.IsEmpty());
-            Assert.AreEqual("gate 21", list.head.Value);
+            Assert.AreEqual("gate 21", list.getValue(0));
         }
         [TestMethod]
         public void InsertInTailTest()
         {
             list.InsertElementToHead("element in head");
             list.InsertElementToTail("element in tail");
-            Assert.AreEqual("element in tail", list.head.Next.Value);
+            Assert.AreEqual("element in tail", list.getValue(1));
         }
         [TestMethod]
         public void InsertOnPositionTest()
         {
             list.InsertElementToPosition("the lord of the rings is the best film ever", 0);
             Assert.IsFalse(list.IsEmpty());
-            Assert.AreEqual("the lord of the rings is the best film ever", list.head.Value);
+            Assert.AreEqual("the lord of the rings is the best film ever", list.getValue(0));
             list.InsertElementToPosition("but Interstate 60 is also the good movie", 1);
             list.InsertElementToPosition("Back to the Future may also compete for first place in the top movies", 2);
             list.InsertElementToPosition("I hate cheap American action movie", 1);
-            Assert.AreEqual("I hate cheap American action movie", list.head.Next.Value);
+            Assert.AreEqual("I hate cheap American action movie", list.getValue(1));
         }
 
         [TestMethod]
@@ -84,7 +84,7 @@ namespace _2._2._2.Tests
             Assert.AreEqual(3, list.SizeOfList());
             list.RemoveElementFromPosition(1);
             Assert.AreEqual(2, list.SizeOfList());
-            Assert.AreEqual("Cogito ergo sum", list.head.Next.Value);
+            Assert.AreEqual("Cogito ergo sum", list.getValue(1));
         }
 
         [TestMethod]
@@ -114,7 +114,7 @@ namespace _2._2._2.Tests
             Assert.AreEqual(4, list.SizeOfList());
             list.removeElementByValue("666");
             Assert.AreEqual(3, list.SizeOfList());
-            Assert.AreEqual("8", list.head.Next.Next.Value);
+            Assert.AreEqual("8", list.getValue(2));
         }
         [TestMethod]
         public void removeElementByNonexistentValueTest()
@@ -122,7 +122,7 @@ namespace _2._2._2.Tests
             list.InsertElementToHead("5");
             list.removeElementByValue("6");
             Assert.AreEqual(1, list.SizeOfList());
-            Assert.AreEqual("5", list.head.Value);
+            Assert.AreEqual("5", list.getValue(0));
         }
     }
 }
