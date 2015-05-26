@@ -16,9 +16,9 @@ namespace _2._1._3.Tests
             array[2] = 65;
             array[3] = 48;
             array[4] = 15;
-            BubbleSort.bubbleSort(array, length);
+            BubbleSort.BubbleSorting(array);
             Array expected = new [] {0, 5, 15, 48, 65};
-            Assert.AreEqual(expected, array);
+            CollectionAssert.AreEqual(expected, array);
         }
     }
 }
