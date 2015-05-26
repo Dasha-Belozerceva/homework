@@ -1,0 +1,9 @@
+C:\Users\Дарья\Documents\Visual Studio 2013\Projects\2.6.2\2.6.2\bin\Debug\2.6.2.exe.config
+C:\Users\Дарья\Documents\Visual Studio 2013\Projects\2.6.2\2.6.2\bin\Debug\2.6.2.exe
+C:\Users\Дарья\Documents\Visual Studio 2013\Projects\2.6.2\2.6.2\bin\Debug\2.6.2.pdb
+C:\Users\Дарья\Documents\Visual Studio 2013\Projects\2.6.2\2.6.2\obj\Debug\2.6.2.csprojResolveAssemblyReference.cache
+C:\Users\Дарья\Documents\Visual Studio 2013\Projects\2.6.2\2.6.2\obj\Debug\_2._6._2.DigitalClock.resources
+C:\Users\Дарья\Documents\Visual Studio 2013\Projects\2.6.2\2.6.2\obj\Debug\_2._6._2.Properties.Resources.resources
+C:\Users\Дарья\Documents\Visual Studio 2013\Projects\2.6.2\2.6.2\obj\Debug\2.6.2.csproj.GenerateResource.Cache
+C:\Users\Дарья\Documents\Visual Studio 2013\Projects\2.6.2\2.6.2\obj\Debug\2.6.2.exe
+C:\Users\Дарья\Documents\Visual Studio 2013\Projects\2.6.2\2.6.2\obj\Debug\2.6.2.pdb
