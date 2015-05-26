@@ -2,88 +2,124 @@
 
 namespace _2._1._6
 {
-    class Snail
+    public class Snail
     {
-        //Функция для обхода матрицы по спирали
-        public static void OutpootBySnail(int[][] matrix, int N)
+        /// <summary>
+        /// method of bypassing matrix spiral
+        /// </summary>
+        /// <param name="matrix">required matrix</param>
+        public static string OutpootBySnail(int[][] matrix)
         {
             //Выбираем центральную ячейку матрицы и выводим ее на экран
-            int i = N/2;
-            int j = N/2;
-            Console.Write(matrix[i][j] + " ");
+            int i = matrix.Length / 2;
+            int j = matrix.Length / 2;
+            string outpootLine = matrix[i][j].ToString() + " ";
             //Количество перемещений в одном направлении сначала равно единице. 
             //Движение начинается с центральной ячейки.
-            int CountOfMove = 1;
+            int countOfMove = 1;
             int row = i;
             int column = j;
-            while (CountOfMove != N)
+            while (countOfMove != matrix.Length)
             {
-                column = MoveToRight(matrix, row, column, CountOfMove, N);
-                row = MoveToDown(matrix, row, column, CountOfMove, N);
-                ++CountOfMove;
-                column = MoveToLeft(matrix, row, column, CountOfMove);
-                row = MoveToUp(matrix, row, column, CountOfMove);
-                if (CountOfMove + 1 == N)
+                column = MoveToRight(matrix, row, column, countOfMove, ref outpootLine);
+                row = MoveToDown(matrix, row, column, countOfMove, ref outpootLine);
+                ++countOfMove;
+                column = MoveToLeft(matrix, row, column, countOfMove, ref outpootLine);
+                row = MoveToUp(matrix, row, column, countOfMove, ref outpootLine);
+                if (countOfMove + 1 == matrix.Length)
                 {
-                    MoveToRight(matrix, row, column, CountOfMove, N);
+                    MoveToRight(matrix, row, column, countOfMove, ref outpootLine);
+                    return outpootLine;
                 }
-                ++CountOfMove;
+                ++countOfMove;
             }
+            return outpootLine;
         }
 
-        //Отдельные функции для перемещения вправо, вниз, влево, вверх
-        public static int MoveToRight(int[][] matrix, int i, int j, int CountOfMove, int N)
+        /// <summary>
+        /// function of move right
+        /// </summary>
+        /// <param name="matrix">required matrix</param>
+        /// <param name="i">row number from which the movement begins</param>
+        /// <param name="j">column number from which the movement begins</param>
+        /// <param name="countOfMove">amount of movement in the direction that needs to be done during the work function</param>
+        /// <returns>the column number at which to stop the movement</returns>
+        public static int MoveToRight(int[][] matrix, int i, int j, int countOfMove, ref string outpootLine)
         {
             int step = 0;
-            while (step != CountOfMove)
+            while (step != countOfMove)
             {
                 ++j;
                 ++step;
-                if (j == N)
+                if (j == matrix.Length)
                     break;
-                Console.Write(matrix[i][j] + " ");
+                outpootLine += matrix[i][j].ToString() + " ";
             }
             return j;
         }
 
-        public static int MoveToDown(int[][] matrix, int i, int j, int CountOfMove, int N)
+        /// <summary>
+        /// function of move down
+        /// </summary>
+        /// <param name="matrix">required matrix</param>
+        /// <param name="i">row number from which the movement begins</param>
+        /// <param name="j">column number from which the movement begins</param>
+        /// <param name="countOfMove">amount of movement in the direction that needs to be done during the work function</param>
+        /// <returns>the row number at which to stop the movement</returns>
+        public static int MoveToDown(int[][] matrix, int i, int j, int countOfMove, ref string outpootLine)
         {
             int step = 0;
-            while (step != CountOfMove)
+            while (step != countOfMove)
             {
                 ++i;
                 ++step;
-                if (i == N)
+                if (i == matrix.Length)
                     break;
-                Console.Write(matrix[i][j] + " ");
+                outpootLine += matrix[i][j].ToString() + " ";
             }
             return i;
         }
 
-        public static int MoveToLeft(int[][] matrix, int i, int j, int CountOfMove)
+        /// <summary>
+        /// function of move left
+        /// </summary>
+        /// <param name="matrix">required matrix</param>
+        /// <param name="i">row number from which the movement begins</param>
+        /// <param name="j">column number from which the movement begins</param>
+        /// <param name="countOfMove">amount of movement in the direction that needs to be done during the work function</param>
+        /// <returns>the column number at which to stop the movement</returns>
+        public static int MoveToLeft(int[][] matrix, int i, int j, int countOfMove, ref string outpootLine)
         {
             int step = 0;
-            while (step != CountOfMove)
+            while (step != countOfMove)
             {
                 --j;
                 ++step;
                 if (j < 0)
                     break;
-                Console.Write(matrix[i][j] + " ");
+                outpootLine += matrix[i][j].ToString() + " ";
             }
             return j;
         }
 
-        public static int MoveToUp(int[][] matrix, int i, int j, int CountOfMove)
+        /// <summary>
+        /// function of move up
+        /// </summary>
+        /// <param name="matrix">required matrix</param>
+        /// <param name="i">row number from which the movement begins</param>
+        /// <param name="j">column number from which the movement begins</param>
+        /// <param name="countOfMove">amount of movement in the direction that needs to be done during the work function</param>
+        /// <returns>the row number at which to stop the movement</returns>
+        public static int MoveToUp(int[][] matrix, int i, int j, int countOfMove, ref string outpootLine)
         {
             int step = 0;
-            while (step != CountOfMove)
+            while (step != countOfMove)
             {
                 --i;
                 ++step;
                 if (i < 0)
                     break;
-                Console.Write(matrix[i][j] + " ");
+                outpootLine += matrix[i][j].ToString() + " ";
             }
             return i;
         }
@@ -93,7 +129,7 @@ namespace _2._1._6
             //Размерность квадратной матрицы
             Console.WriteLine("Enter the number of matrix: ");
             int N = Convert.ToInt32(Console.ReadLine());
-            if (N% 2 == 0)
+            if (N % 2 == 0)
             {
                 Console.WriteLine("Number of matrix must be odd");
                 return 0;
@@ -107,8 +143,6 @@ namespace _2._1._6
             int[][] matrix = new int[N][];
             for (int i = 0; i < N; ++i)
                 matrix[i] = new int[N];
-
-            //Заполняем матрицу
             //Заполняем матрицу
             for (int i = 0; i < N; ++i)
                 for (int j = 0; j < N; ++j)
@@ -124,8 +158,8 @@ namespace _2._1._6
             Console.WriteLine();
             //Вывод матрицы спиралью на экран
             Console.WriteLine("Numbers of Matrix: ");
-            OutpootBySnail(matrix, N);
-            Console.WriteLine();
+            string outpootLine = OutpootBySnail(matrix);
+            Console.WriteLine(outpootLine);
             return 0;
         }
     }
