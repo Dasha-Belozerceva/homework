@@ -1,0 +1,14 @@
+C:\Users\Даша\Documents\Visual Studio 2013\Projects\2.3.2\2.3.2.Hash.Tests\bin\Debug\2.3.2.Hash.Tests.dll
+C:\Users\Даша\Documents\Visual Studio 2013\Projects\2.3.2\2.3.2.Hash.Tests\bin\Debug\2.3.2.Hash.Tests.pdb
+C:\Users\Даша\Documents\Visual Studio 2013\Projects\2.3.2\2.3.2.Hash.Tests\bin\Debug\2.3.2.exe
+C:\Users\Даша\Documents\Visual Studio 2013\Projects\2.3.2\2.3.2.Hash.Tests\bin\Debug\2.3.2.pdb
+C:\Users\Даша\Documents\Visual Studio 2013\Projects\2.3.2\2.3.2.Hash.Tests\obj\Debug\2.3.2.Hash.Tests.csprojResolveAssemblyReference.cache
+C:\Users\Даша\Documents\Visual Studio 2013\Projects\2.3.2\2.3.2.Hash.Tests\obj\Debug\2.3.2.Hash.Tests.dll
+C:\Users\Даша\Documents\Visual Studio 2013\Projects\2.3.2\2.3.2.Hash.Tests\obj\Debug\2.3.2.Hash.Tests.pdb
+C:\Dasha\прога\Projects\2.3.2\2.3.2.Hash.Tests\bin\Debug\2.3.2.Hash.Tests.dll
+C:\Dasha\прога\Projects\2.3.2\2.3.2.Hash.Tests\bin\Debug\2.3.2.Hash.Tests.pdb
+C:\Dasha\прога\Projects\2.3.2\2.3.2.Hash.Tests\bin\Debug\2.3.2.exe
+C:\Dasha\прога\Projects\2.3.2\2.3.2.Hash.Tests\bin\Debug\2.3.2.pdb
+C:\Dasha\прога\Projects\2.3.2\2.3.2.Hash.Tests\obj\Debug\2.3.2.Hash.Tests.csprojResolveAssemblyReference.cache
+C:\Dasha\прога\Projects\2.3.2\2.3.2.Hash.Tests\obj\Debug\2.3.2.Hash.Tests.dll
+C:\Dasha\прога\Projects\2.3.2\2.3.2.Hash.Tests\obj\Debug\2.3.2.Hash.Tests.pdb

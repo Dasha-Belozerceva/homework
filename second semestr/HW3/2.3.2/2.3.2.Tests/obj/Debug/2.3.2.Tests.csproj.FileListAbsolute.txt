@@ -1,0 +1,7 @@
+C:\Users\Даша\Documents\Visual Studio 2013\Projects\2.3.2\2.3.2.Tests\bin\Debug\2.3.2.Tests.dll
+C:\Users\Даша\Documents\Visual Studio 2013\Projects\2.3.2\2.3.2.Tests\bin\Debug\2.3.2.Tests.pdb
+C:\Users\Даша\Documents\Visual Studio 2013\Projects\2.3.2\2.3.2.Tests\bin\Debug\2.3.2.exe
+C:\Users\Даша\Documents\Visual Studio 2013\Projects\2.3.2\2.3.2.Tests\bin\Debug\2.3.2.pdb
+C:\Users\Даша\Documents\Visual Studio 2013\Projects\2.3.2\2.3.2.Tests\obj\Debug\2.3.2.Tests.csprojResolveAssemblyReference.cache
+C:\Users\Даша\Documents\Visual Studio 2013\Projects\2.3.2\2.3.2.Tests\obj\Debug\2.3.2.Tests.dll
+C:\Users\Даша\Documents\Visual Studio 2013\Projects\2.3.2\2.3.2.Tests\obj\Debug\2.3.2.Tests.pdb
