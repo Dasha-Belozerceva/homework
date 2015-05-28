@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0A79292F-7EEE-41B4-B95A-C16BD1B359B4}</ProjectGuid>
+    <ProjectGuid>{5981F76A-A8A5-4BC6-8C01-2B65B2FCE79D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>List.Tests</RootNamespace>
-    <AssemblyName>List.Tests</AssemblyName>
+    <RootNamespace>ListTest.Tests</RootNamespace>
+    <AssemblyName>ListTest.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -50,15 +50,12 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="listTest.cs" />
+    <Compile Include="ListTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadata Include="Service References\" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\2.3.2\2.3.2.csproj">
-      <Project>{745e8050-ba60-4fef-8c99-adbfd2a6ff0e}</Project>
+      <Project>{3f037124-da2d-4cf5-a126-54888d53a074}</Project>
       <Name>2.3.2</Name>
     </ProjectReference>
   </ItemGroup>

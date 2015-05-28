@@ -10,13 +10,13 @@
     public class Hash
     {
         private const int hashSize = 1000;
-        
+
         /// <summary>
         /// type of elements of the hash table is lists
         /// </summary>
         private List[] hash = new List[hashSize];
         private GeneralFunction hashFunction;
-        
+
         /// <summary>
         /// fill the hash table is empty lists
         /// </summary>
@@ -28,7 +28,7 @@
             }
             this.hashFunction = hashFunction;
         }
-        
+
         /// <summary>
         /// function to switch Hash Function
         /// </summary>
@@ -39,12 +39,12 @@
             for (int i = 0; i < hashSize; ++i)
             {
                 List element = hash[i];
-                
+
                 while (!element.IsEmpty())
                 {
                     list.InsertElementToHead(element.GetValue(0));
                     element.RemoveElementFromPosition(0);
-                 }
+                }
             }
             this.hashFunction = hashFunction;
             while (!list.IsEmpty())
@@ -54,7 +54,7 @@
                 hash[hashFunction.HashFunction(value)].InsertElementToHead(value);
             }
         }
-       
+
         /// <summary>
         /// add element to hashtable
         /// </summary>`
@@ -63,7 +63,7 @@
         {
             hash[hashFunction.HashFunction(element)].InsertElementToHead(element);
         }
-        
+
         /// <summary>
         /// check existence of element on hashtable
         /// </summary>
@@ -73,7 +73,7 @@
         {
             return hash[hashFunction.HashFunction(element)].availabilityOFValue(element);
         }
-        
+
         /// <summary>
         /// delete element from hashtable
         /// </summary>
@@ -82,7 +82,7 @@
         {
             hash[hashFunction.HashFunction(element)].RemoveElementByValue(element);
         }
-        
+
         /// <summary>
         /// check hashtable for existance of element
         /// </summary>
@@ -98,7 +98,7 @@
             }
             return true;
         }
-        
+
         /// <summary>
         /// Console Writeline elements of hashtable
         /// </summary>
