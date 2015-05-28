@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.7.2", "2.7.2\2.7.2.csproj", "{5BFA931D-3FC0-41D5-96A2-56D63D990A68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "multiplicityTest", "multiplicityTest\multiplicityTest.csproj", "{5F614283-5247-4A54-8E8B-EBDFD79D011E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5BFA931D-3FC0-41D5-96A2-56D63D990A68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BFA931D-3FC0-41D5-96A2-56D63D990A68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BFA931D-3FC0-41D5-96A2-56D63D990A68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BFA931D-3FC0-41D5-96A2-56D63D990A68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F614283-5247-4A54-8E8B-EBDFD79D011E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F614283-5247-4A54-8E8B-EBDFD79D011E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F614283-5247-4A54-8E8B-EBDFD79D011E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F614283-5247-4A54-8E8B-EBDFD79D011E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
