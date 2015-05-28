@@ -2,7 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using TemplateOfList;
 
-namespace _2._3._2.Tests
+namespace _2._2._2.Tests
 {
     [TestClass]
     public class ListTest
