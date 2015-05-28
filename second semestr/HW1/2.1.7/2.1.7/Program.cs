@@ -2,31 +2,46 @@
 
 namespace _2._1._7
 {
-    class MatrixSort
+    public class MatrixSort
     {
-        //Сортируем столбцы матрицы
-       static void SortMatrix(int[][] matrix, int n, int m)
+        
+        /// <summary>
+        /// Sorting of matrix columns
+        /// </summary>
+        /// <param name="matrix">required matrix</param>
+        /// <param name="n">number of row in matrix</param>
+        /// <param name="m">number of column in matrix</param>
+       public static void SortMatrix(int[][] matrix)
         {
-           for (int i = 0; i < m; ++i)
+           for (int i = 0; i < matrix.GetLength(0); ++i)
            {
-               for (int j = i; j < m; ++j)
+               for (int j = i; j < matrix[i].GetLength(0); ++j)
                {
                    if (matrix[0][j] < matrix[0][i])
-                       swap(matrix, n, i, j);
+                       Swap(matrix, i, j);
                }
            }
         }
+
         //Меняем местами столбцы матрицы
-       static void swap(int[][] matrix, int n, int i, int j)
+        /// <summary>
+       /// swap the columns of the matrix
+        /// </summary>
+       /// <param name="matrix">required matrix</param>
+        /// <param name="n">number of row in matrix</param>
+       /// <param name="i">column position which values must be changed</param>
+       /// <param name="j">column position which values must be changed</param>
+       static void Swap(int[][] matrix, int i, int j)
          {
-           int temp = 0;
-            for (int m = 0; m < n; ++m)
-            {
+             int temp = 0;
+             for (int m = 0; m < matrix.GetLength(0); ++m)
+             {   
                 temp = matrix[m][i];
                 matrix[m][i] = matrix[m][j];
                 matrix[m][j] = temp;
-            }
+             }
        }
+
        public static void Main()
         {
            //Количество строк в матрице
@@ -56,7 +71,7 @@ namespace _2._1._7
            }
            Console.WriteLine();
            //сортируем матрицу
-           SortMatrix(matrix, n, m);
+           SortMatrix(matrix);
            //Выводим на экран сортированную матрицу
            Console.WriteLine("Sorted matrix: \n");
            for (int i = 0; i < n; ++i)
