@@ -13,25 +13,29 @@ namespace _2._2._3.hash.Tests
         {
             hash = new Hash();
         }
+
         [TestMethod]
         public void HashIsEmptyTest()
         {
             Assert.IsTrue(hash.HashIsEmpty());
         }
+
         [TestMethod]
         public void InsertElementToHashTableTest()
         {
             hash.InsertElementToHashTable("Expecto Patronum");
             Assert.IsFalse(hash.HashIsEmpty());
         }
+
         [TestMethod]
-        public void AvailabilityOFElementInHashTableTest()
+        public void ContainsTest()
         {
             hash.InsertElementToHashTable("Crucio");
             hash.InsertElementToHashTable("Imperio");
-            Assert.IsFalse(hash.AvailabilityOFElementInHashTable("Avada Kedavra"));
-            Assert.IsTrue(hash.AvailabilityOFElementInHashTable("Crucio"));
+            Assert.IsFalse(hash.Contains("Avada Kedavra"));
+            Assert.IsTrue(hash.Contains("Crucio"));
         }
+
         [TestMethod]
         public void RemoveElementFromHashTableTest()
         {
@@ -40,9 +44,9 @@ namespace _2._2._3.hash.Tests
             hash.InsertElementToHashTable("Nox");
             hash.InsertElementToHashTable("Riddikulus");
             hash.InsertElementToHashTable("Wingardium Leviosa");
-            Assert.IsTrue(hash.AvailabilityOFElementInHashTable("Wingardium Leviosa"));
+            Assert.IsTrue(hash.Contains("Wingardium Leviosa"));
             hash.RemoveElementFromHashTable("Wingardium Leviosa");
-            Assert.IsFalse(hash.AvailabilityOFElementInHashTable("Wingardium Leviosa"));
+            Assert.IsFalse(hash.Contains("Wingardium Leviosa"));
         }
     }
 }

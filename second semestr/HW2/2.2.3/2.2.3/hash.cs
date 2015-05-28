@@ -2,30 +2,35 @@
 {
     using System;
     using TemplateOfList;
-
+    /// <summary>
+    /// hash table using the class-list
+    /// </summary>
     public class Hash
     {
-        public const int HashSize = 1000;
+        private const int hashSize = 1000;
+        
         /// <summary>
         /// type of elements of the hash table is lists
         /// </summary>
-        private List[] hash = new List[HashSize];
+        private List[] hash = new List[hashSize];
+        
         /// <summary>
         /// fill the hash table is empty lists
         /// </summary>
         public Hash()
         {
-            for (int i = 0; i < HashSize; ++i)
+            for (int i = 0; i < hashSize; ++i)
             {
                 hash[i] = new List();
             }
         }
+        
         /// <summary>
         /// index the elements of the hash table
         /// </summary>
         /// <param name="element">value of element</param>
         /// <returns>index</returns>
-        public int HashFunction(string element)
+        private int HashFunction(string element)
         {
             int index = 0;
             for (int i = 0; i < element.Length; ++i)
@@ -40,6 +45,7 @@
                 index /= element.Length;
             return index;
         }
+        
         /// <summary>
         /// add element to hashtable
         /// </summary>
@@ -48,15 +54,17 @@
         {
             hash[HashFunction(element)].InsertElementToHead(element);
         }
+        
         /// <summary>
         /// check existence of element on hashtable
         /// </summary>
         /// <param name="element">value of element</param>
         /// <returns>"true" if element is in hashtable, "false" if element is not exist in hashtable</returns>
-        public bool AvailabilityOFElementInHashTable(string element)
+        public bool Contains(string element)
         {
             return hash[HashFunction(element)].availabilityOFValue(element);
         }
+        
         /// <summary>
         /// delete element from hashtable
         /// </summary>
@@ -65,13 +73,14 @@
         {
             hash[HashFunction(element)].removeElementByValue(element);
         }
+        
         /// <summary>
         /// check hashtable for existance of element
         /// </summary>
         /// <returns>"true" if there are not elements in hashtable, else "false"</returns>
         public bool HashIsEmpty()
         {
-            for (int i = 0; i < HashSize; ++i)
+            for (int i = 0; i < hashSize; ++i)
             {
                 if (!hash[i].IsEmpty())
                 {
@@ -80,12 +89,13 @@
             }
             return true;
         }
+        
         /// <summary>
         /// Console Writeline elements of hashtable
         /// </summary>
         public void PrintHash()
         {
-            for (int i = 0; i < HashSize; ++i)
+            for (int i = 0; i < hashSize; ++i)
             {
                 hash[i].printList();
                 Console.WriteLine();
