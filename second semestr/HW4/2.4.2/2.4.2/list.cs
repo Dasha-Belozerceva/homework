@@ -9,6 +9,7 @@ namespace MyList
         /// Pointer to the first list element. if the list is empty, the first element is null
         /// </summary>
         public ListElement head = null;
+        
         /// <summary>
         /// describe list element
         /// </summary>
@@ -23,6 +24,7 @@ namespace MyList
             /// </summary>
             public ListElement Next { get; set; }
         }
+        
         /// <summary>
         /// check list to the existence of elements in it
         /// </summary>
@@ -31,6 +33,7 @@ namespace MyList
         {
             return head == null;
         }
+        
         /// <summary>
         /// show on the screen the count of elements in list
         /// </summary>
@@ -46,6 +49,7 @@ namespace MyList
             }
             return size;
         }
+        
         /// <summary>
         /// show ont the screen value of element on this position
         /// </summary>
@@ -67,11 +71,12 @@ namespace MyList
             }
             return positionElement.Value;
         }
+        
         /// <summary>
         /// add element to the top of list
         /// </summary>
         /// <param name="value">value of this element</param>
-        public void InsertElementToHead(int value)
+        virtual public void InsertElementToHead(int value)
         {
             ListElement newElement = new ListElement()
             {
@@ -80,11 +85,12 @@ namespace MyList
             };
             head = newElement;
         }
+        
         /// <summary>
         /// add element to the end of list
         /// </summary>
         /// <param name="value">value of this element</param>
-        public void InsertElementToTail(int value)
+        virtual public void InsertElementToTail(int value)
         {
             //если список пуст, то элемент добавляем в голову
             if (IsEmpty())
@@ -101,12 +107,13 @@ namespace MyList
             newElement.Value = value;
             currentElement.Next = newElement;
         }
+
         /// <summary>
         /// add element on this position
         /// </summary>
         /// <param name="value">value of this element</param>
         /// <param name="position">position of this element</param>
-        public void InsertElementToPosition(int value, int position)
+        public virtual void InsertElementToPosition(int value, int position)
         {
             //проверка корректности заданной позиции
             if (position < 0 || position > SizeOfList() + 1)
@@ -139,29 +146,7 @@ namespace MyList
                 currentElement.Next = newElement;
             }
         }
-        /// <summary>
-        /// delete element from this position
-        /// </summary>
-        /// <param name="position">position of this element</param>
-        /// <returns></returns>
-        public void RemoveElementFromPosition(int position)
-        {
-            //если позиция равна нулю, удаляем из начала списка
-            if (position == 0)
-            {
-                head = head.Next;
-                return;
-            }
-            ListElement currentElement = head;
-            int countOfPosition = 0;
-            while (countOfPosition != position - 1)
-            {
-                currentElement = currentElement.Next;
-                ++countOfPosition;
-            }
-            currentElement.Next = currentElement.Next.Next;
-            return;
-        }
+
         /// <summary>
         /// checks for element value in the list
         /// </summary>
@@ -180,11 +165,36 @@ namespace MyList
             }
             return false;
         }
+
+        /// <summary>
+        /// delete element from this position
+        /// </summary>
+        /// <param name="position">position of this element</param>
+        /// <returns></returns>
+        public virtual void RemoveElementFromPosition(int position)
+        {
+            //если позиция равна нулю, удаляем из начала списка
+            if (position == 0)
+            {
+                head = head.Next;
+                return;
+            }
+            ListElement currentElement = head;
+            int countOfPosition = 0;
+            while (countOfPosition != position - 1)
+            {
+                currentElement = currentElement.Next;
+                ++countOfPosition;
+            }
+            currentElement.Next = currentElement.Next.Next;
+            return;
+        }
+        
         /// <summary>
         /// delete element with this value from list
         /// </summary>
         /// <param name="value">value of this element</param>
-        public void removeElementByValue(int value)
+        public virtual void removeElementByValue(int value)
         {
             ListElement currentElement = head;
             ListElement previousElement = head;
@@ -203,6 +213,7 @@ namespace MyList
             }
             previousElement.Next = currentElement.Next;
         }
+        
         /// <summary>
         /// and finally...print this list (show its on the screen)
         /// </summary>

@@ -1,7 +1,9 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using _2._4._2;
+using uniqueListNamespace;
 using MyList;
+
 
 
 namespace uniqueListTest
@@ -9,11 +11,14 @@ namespace uniqueListTest
     [TestClass]
     public class ListTest
     {
-        private List list;
+        public List list;
+        private UniqueList uniqueList;
+       
         [TestInitialize]
         public void Initialize()
         {
             list = new List();
+            uniqueList = new UniqueList();
         }
 
         [TestMethod]
@@ -51,8 +56,8 @@ namespace uniqueListTest
         [ExpectedException(typeof(ContainedValueInListException))]
         public void InsertInHeadTest2()
         {
-            list.InsertElementToHead(8);
-            list.InsertElementToHead(8);
+            uniqueList.InsertElementToHead(8);
+            uniqueList.InsertElementToHead(8);
         }
 
         [TestMethod]
@@ -67,8 +72,8 @@ namespace uniqueListTest
         [ExpectedException(typeof(ContainedValueInListException))]
         public void InsertInTailTest2()
         {
-            list.InsertElementToHead(8);
-            list.InsertElementToTail(8);
+            uniqueList.InsertElementToHead(8);
+            uniqueList.InsertElementToTail(8);
         }
 
         [TestMethod]
@@ -87,10 +92,10 @@ namespace uniqueListTest
         [ExpectedException(typeof(ContainedValueInListException))]
         public void InsertInHeadTest3()
         {
-            list.InsertElementToHead(8);
-            list.InsertElementToHead(7);
-            list.InsertElementToHead(6);
-            list.InsertElementToPosition(7, 1);
+            uniqueList.InsertElementToHead(8);
+            uniqueList.InsertElementToHead(7);
+            uniqueList.InsertElementToHead(6);
+            uniqueList.InsertElementToPosition(7, 1);
         }
 
         [TestMethod]
@@ -121,9 +126,9 @@ namespace uniqueListTest
         [ExpectedException(typeof(NoElementInTheListExeption))]
         public void RemoveElementFromPositionTest2()
         {
-            list.InsertElementToHead(8);
-            list.InsertElementToHead(7);
-            list.RemoveElementFromPosition(2);
+            uniqueList.InsertElementToHead(8);
+            uniqueList.InsertElementToHead(7);
+            uniqueList.RemoveElementFromPosition(2);
         }
 
         
@@ -144,9 +149,9 @@ namespace uniqueListTest
         [ExpectedException(typeof(NoElementInTheListExeption))]
         public void RemoveElementByValueTest2()
         {
-            list.InsertElementToHead(8);
-            list.InsertElementToHead(7);
-            list.removeElementByValue(3);
+            uniqueList.InsertElementToHead(8);
+            uniqueList.InsertElementToHead(7);
+            uniqueList.removeElementByValue(3);
         }
         
     }
