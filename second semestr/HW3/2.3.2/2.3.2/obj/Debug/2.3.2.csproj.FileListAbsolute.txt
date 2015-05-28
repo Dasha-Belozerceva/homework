@@ -10,3 +10,6 @@ C:\Dasha\прога\Projects\2.3.2\2.3.2\obj\Debug\2.3.2.pdb
 C:\Dasha\прога\Projects\2.3.2\2.3.2\obj\Debug\2.3.2.csprojResolveAssemblyReference.cache
 C:\Dasha\прога\Projects\2.3.2\2.3.2\bin\Debug\2.3.2.exe
 C:\Dasha\прога\Projects\2.3.2\2.3.2\bin\Debug\2.3.2.pdb
+C:\Users\Дарья\Documents\GitHub\homework\second semestr\HW3\2.3.2\2.3.2\bin\Debug\2.3.2.exe.config
+C:\Users\Дарья\Documents\GitHub\homework\second semestr\HW3\2.3.2\2.3.2\obj\Debug\2.3.2.exe
+C:\Users\Дарья\Documents\GitHub\homework\second semestr\HW3\2.3.2\2.3.2\obj\Debug\2.3.2.pdb
