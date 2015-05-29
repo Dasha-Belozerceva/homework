@@ -9,7 +9,7 @@ namespace TemplateOfList
         /// Pointer to the first list element. if the list is empty, the first element is null
         /// </summary>
         ListElement head = null;
-        
+
         /// <summary>
         /// describe list element
         /// </summary>
@@ -19,13 +19,13 @@ namespace TemplateOfList
             /// value of the list element
             /// </summary>
             public string Value { get; set; }
-            
+
             /// <summary>
             /// link to the next element
             /// </summary>
             public ListElement Next { get; set; }
         }
-        
+
         /// <summary>
         /// check list to the existence of elements in it
         /// </summary>
@@ -34,7 +34,7 @@ namespace TemplateOfList
         {
             return head == null;
         }
-       
+
         /// <summary>
         /// show on the screen the count of elements in list
         /// </summary>
@@ -50,7 +50,7 @@ namespace TemplateOfList
             }
             return size;
         }
-        
+
         /// <summary>
         /// show on the screen value of element on this position
         /// </summary>
@@ -72,7 +72,7 @@ namespace TemplateOfList
             }
             return positionElement.Value;
         }
-        
+
         /// <summary>
         /// add element to the top of list
         /// </summary>
@@ -86,7 +86,7 @@ namespace TemplateOfList
             };
             head = newElement;
         }
-        
+
         /// <summary>
         /// add element to the end of list
         /// </summary>
@@ -108,7 +108,7 @@ namespace TemplateOfList
             newElement.Value = value;
             currentElement.Next = newElement;
         }
-        
+
         /// <summary>
         /// add element on this position
         /// </summary>
@@ -147,7 +147,7 @@ namespace TemplateOfList
                 currentElement.Next = newElement;
             }
         }
-        
+
         /// <summary>
         /// delete element from this position
         /// </summary>
@@ -177,7 +177,7 @@ namespace TemplateOfList
             currentElement.Next = currentElement.Next.Next;
             return;
         }
-       
+
         /// <summary>
         /// checks for element value in the list
         /// </summary>
@@ -196,7 +196,7 @@ namespace TemplateOfList
             }
             return false;
         }
-        
+
         /// <summary>
         /// delete element with this value from list
         /// </summary>
@@ -226,7 +226,7 @@ namespace TemplateOfList
             }
             previousElement.Next = currentElement.Next;
         }
-        
+
         /// <summary>
         /// and finally...print this list (show its on the screen)
         /// </summary>
