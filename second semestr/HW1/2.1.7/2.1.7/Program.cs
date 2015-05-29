@@ -2,30 +2,44 @@
 
 namespace _2._1._7
 {
-    class MatrixSort
+    public class MatrixSort
     {
-        //Сортируем столбцы матрицы
-       static void SortMatrix(int[][] matrix, int n, int m)
+        
+        /// <summary>
+        /// Sorting of matrix columns
+        /// </summary>
+        /// <param name="matrix">required matrix</param>
+        /// <param name="n">number of row in matrix</param>
+        /// <param name="m">number of column in matrix</param>
+       public static void SortMatrix(int[][] matrix, int n, int m)
         {
            for (int i = 0; i < m; ++i)
            {
                for (int j = i; j < m; ++j)
                {
                    if (matrix[0][j] < matrix[0][i])
-                       swap(matrix, n, i, j);
+                       Swap(matrix, n, i, j);
                }
            }
         }
         //Меняем местами столбцы матрицы
-       static void swap(int[][] matrix, int n, int i, int j)
+        /// <summary>
+       /// swap the columns of the matrix
+        /// </summary>
+       /// <param name="matrix">required matrix</param>
+        /// <param name="n">number of row in matrix</param>
+       /// <param name="i">column position which values must be changed</param>
+       /// <param name="j">column position which values must be changed</param>
+       static void Swap(int[][] matrix, int n, int i, int j)
          {
-           int temp = 0;
-            for (int m = 0; m < n; ++m)
-            {
+             int temp = 0;
+             for (int m = 0; m < n; ++m)
+             {
+                
                 temp = matrix[m][i];
                 matrix[m][i] = matrix[m][j];
                 matrix[m][j] = temp;
-            }
+             }
        }
        public static void Main()
         {

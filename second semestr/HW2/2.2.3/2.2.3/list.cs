@@ -8,11 +8,11 @@ namespace TemplateOfList
         /// <summary>
         /// Pointer to the first list element. if the list is empty, the first element is null
         /// </summary>
-        public ListElement head = null;
+        private ListElement head = null;
         /// <summary>
         /// describe list element
         /// </summary>
-        public class ListElement
+        private class ListElement
         {
             /// <summary>
             /// value of the list element
@@ -47,7 +47,7 @@ namespace TemplateOfList
             return size;
         }
         /// <summary>
-        /// show on the screen value of element on this position
+        /// return value of element on this position
         /// </summary>
         /// <param name="position"></param>
         /// <returns>value of element</returns>

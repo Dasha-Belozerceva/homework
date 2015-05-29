@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{745E8050-BA60-4FEF-8C99-ADBFD2A6FF0E}</ProjectGuid>
+    <ProjectGuid>{3F037124-DA2D-4CF5-A126-54888D53A074}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>_2._3._2</RootNamespace>
@@ -41,11 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GeneralFunction.cs" />
-    <Compile Include="hash.cs" />
-    <Compile Include="hashFunction1.cs" />
-    <Compile Include="hashFunction2.cs" />
-    <Compile Include="list.cs" />
+    <Compile Include="change function.cs" />
+    <Compile Include="function1.cs" />
+    <Compile Include="function2.cs" />
+    <Compile Include="hashTable.cs" />
+    <Compile Include="List.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

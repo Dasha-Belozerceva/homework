@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{782201E3-0C14-48A5-89C8-7A6EF9FADB15}</ProjectGuid>
+    <ProjectGuid>{A0158295-CB6B-4A30-8A2A-C58A8C673118}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_2._3._2.Hash.Tests</RootNamespace>
-    <AssemblyName>2.3.2.Hash.Tests</AssemblyName>
+    <RootNamespace>_2._1._7.Tests</RootNamespace>
+    <AssemblyName>2.1.7.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -50,13 +50,13 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="TemplateOfHashTest.cs" />
+    <Compile Include="matrixSortTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\2.3.2\2.3.2.csproj">
-      <Project>{745e8050-ba60-4fef-8c99-adbfd2a6ff0e}</Project>
-      <Name>2.3.2</Name>
+    <ProjectReference Include="..\2.1.7\2.1.7.csproj">
+      <Project>{5f6c32ff-abda-45fe-b31e-2cb45182f0bd}</Project>
+      <Name>2.1.7</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

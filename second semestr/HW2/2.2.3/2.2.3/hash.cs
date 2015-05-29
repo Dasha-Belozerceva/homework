@@ -2,20 +2,22 @@
 {
     using System;
     using TemplateOfList;
-
+    /// <summary>
+    /// hash table using the class-list
+    /// </summary>
     public class Hash
     {
-        public const int HashSize = 1000;
+        const int hashSize = 1000;
         /// <summary>
         /// type of elements of the hash table is lists
         /// </summary>
-        private List[] hash = new List[HashSize];
+        private List[] hash = new List[hashSize];
         /// <summary>
         /// fill the hash table is empty lists
         /// </summary>
         public Hash()
         {
-            for (int i = 0; i < HashSize; ++i)
+            for (int i = 0; i < hashSize; ++i)
             {
                 hash[i] = new List();
             }
@@ -25,7 +27,7 @@
         /// </summary>
         /// <param name="element">value of element</param>
         /// <returns>index</returns>
-        public int HashFunction(string element)
+        int HashFunction(string element)
         {
             int index = 0;
             for (int i = 0; i < element.Length; ++i)
@@ -53,7 +55,7 @@
         /// </summary>
         /// <param name="element">value of element</param>
         /// <returns>"true" if element is in hashtable, "false" if element is not exist in hashtable</returns>
-        public bool AvailabilityOFElementInHashTable(string element)
+        public bool Contains(string element)
         {
             return hash[HashFunction(element)].availabilityOFValue(element);
         }
@@ -71,7 +73,7 @@
         /// <returns>"true" if there are not elements in hashtable, else "false"</returns>
         public bool HashIsEmpty()
         {
-            for (int i = 0; i < HashSize; ++i)
+            for (int i = 0; i < hashSize; ++i)
             {
                 if (!hash[i].IsEmpty())
                 {
@@ -85,7 +87,7 @@
         /// </summary>
         public void PrintHash()
         {
-            for (int i = 0; i < HashSize; ++i)
+            for (int i = 0; i < hashSize; ++i)
             {
                 hash[i].printList();
                 Console.WriteLine();

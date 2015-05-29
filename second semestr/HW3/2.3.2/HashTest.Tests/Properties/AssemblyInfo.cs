@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Управление общими сведениями о сборке осуществляется посредством следующего 
 // набора атрибутов. Измените значения этих атрибутов, чтобы изменить сведения,
 // связанные со сборкой.
-[assembly: AssemblyTitle("2.3.2.Hash.Tests")]
+[assembly: AssemblyTitle("HashTest.Tests")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("2.3.2.Hash.Tests")]
+[assembly: AssemblyProduct("HashTest.Tests")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Если данный проект доступен для модели COM, следующий GUID используется в качестве идентификатора библиотеки типов
-[assembly: Guid("555fc48c-d866-48b0-9bf9-c2b01591e7ef")]
+[assembly: Guid("a65a8e6f-05ff-4a0d-be72-d15f90680ec1")]
 
 // Сведения о версии сборки состоят из следующих четырех значений:
 //

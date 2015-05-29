@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F3FF95D6-A8D8-4E1C-92A6-F3495C3D8209}</ProjectGuid>
+    <ProjectGuid>{DD230AE7-54A8-4E96-8194-46F4193C5CD2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_2._3._2.Tests</RootNamespace>
-    <AssemblyName>2.3.2.Tests</AssemblyName>
+    <RootNamespace>HashTest.Tests</RootNamespace>
+    <AssemblyName>HashTest.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -50,12 +50,12 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="TemplateOfListTest.cs" />
+    <Compile Include="HashTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\2.3.2\2.3.2.csproj">
-      <Project>{745e8050-ba60-4fef-8c99-adbfd2a6ff0e}</Project>
+      <Project>{3f037124-da2d-4cf5-a126-54888d53a074}</Project>
       <Name>2.3.2</Name>
     </ProjectReference>
   </ItemGroup>
